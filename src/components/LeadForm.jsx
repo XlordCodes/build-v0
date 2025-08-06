@@ -26,8 +26,8 @@ const LeadForm = ({ leadId = null, onClose, onSave }) => {
     phone: '',
     status: 'New',
     assigned_to: currentUser?.id || '',
-    pipeline_id: 'c5e6h8f0-0i4g-4f9f-f0c8-5fe21h43e5g6',
-    stage_id: 'g9j1l3i2-2m6k-4j1j-j2g0-9hg43l65g7i8',
+    pipeline_id: 'c6f5g7h8-9i0j-1k2l-3m4n-5o6p7q8r9s0t',
+    stage_id: 'f8i7j9k0-1l2m-3n4o-5p6q-7r8s9t0u1v2w',
     custom_fields: {}
   });
 
@@ -41,15 +41,15 @@ const LeadForm = ({ leadId = null, onClose, onSave }) => {
 
   // Mock data (in real app, these would come from context or API)
   const users = [
-    { id: 'e8a1d4a6-6e0c-4b5b-b684-1ba87d09a1c2', name: 'John Smith', role: 'Manager' },
-    { id: 'f9b2e5c7-7f1d-4c6c-c795-2cb98e10b2d3', name: 'Sarah Johnson', role: 'Sales Rep' },
-    { id: 'a3c4f6d8-8g2e-4d7d-d8a6-3dc09f21c3e4', name: 'Mike Wilson', role: 'Sales Rep' },
-    { id: 'b4d5g7e9-9h3f-4e8e-e9b7-4ed10g32d4f5', name: 'Emma Davis', role: 'Admin' }
+    { id: '8f2a1b3c-4d5e-6f7a-8b9c-0d1e2f3a4b5c', name: 'John Smith', role: 'Manager' },
+    { id: '9g3b2c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d', name: 'Sarah Johnson', role: 'Sales Rep' },
+    { id: 'a4c3d5e6-7f8a-9b0c-1d2e-3f4a5b6c7d8e', name: 'Mike Wilson', role: 'Sales Rep' },
+    { id: 'b5d4e6f7-8a9b-0c1d-2e3f-4a5b6c7d8e9f', name: 'Emma Davis', role: 'Admin' }
   ];
 
   const pipelines = [
-    { id: 'c5e6h8f0-0i4g-4f9f-f0c8-5fe21h43e5g6', name: 'Sales Pipeline' },
-    { id: 'd6f7i9g1-1j5h-4g0g-g1d9-6gf32i54f6h7', name: 'Marketing Pipeline' }
+    { id: 'c6f5g7h8-9i0j-1k2l-3m4n-5o6p7q8r9s0t', name: 'Sales Pipeline' },
+    { id: 'd7g6h8i9-0j1k-2l3m-4n5o-6p7q8r9s0t1u', name: 'Marketing Pipeline' }
   ];
 
   const statusOptions = ['New', 'Contacted', 'Qualified', 'Lost', 'Won'];
@@ -120,13 +120,13 @@ const LeadForm = ({ leadId = null, onClose, onSave }) => {
               phone: lead.phone || '',
               status: lead.status || 'New',
               assigned_to: lead.assigned_to || currentUser?.id || '',
-              pipeline_id: lead.pipeline_id || 'pipeline-1',
-              stage_id: lead.stage_id || 'stage-1',
+              pipeline_id: lead.pipeline_id || 'c6f5g7h8-9i0j-1k2l-3m4n-5o6p7q8r9s0t',
+              stage_id: lead.stage_id || 'f8i7j9k0-1l2m-3n4o-5p6q-7r8s9t0u1v2w',
               custom_fields: lead.custom_fields || {}
             });
           }
-      pipeline_id: formData.pipeline_id || 'c5e6h8f0-0i4g-4f9f-f0c8-5fe21h43e5g6',
-      stage_id: formData.stage_id || 'g9j1l3i2-2m6k-4j1j-j2g0-9hg43l65g7i8',
+      pipeline_id: formData.pipeline_id || 'c6f5g7h8-9i0j-1k2l-3m4n-5o6p7q8r9s0t',
+      stage_id: formData.stage_id || 'f8i7j9k0-1l2m-3n4o-5p6q-7r8s9t0u1v2w',
         }
       }
     };
@@ -314,7 +314,7 @@ const LeadForm = ({ leadId = null, onClose, onSave }) => {
         assigned_to: formData.assigned_to,
         pipeline_id: formData.pipeline_id,
         stage_id: formData.stage_id,
-        org_id: currentUser?.orgId || 'org-1',
+        org_id: currentUser?.orgId || 'e8h7i9j0-1k2l-3m4n-5o6p-7q8r9s0t1u2v',
         custom_fields: formData.custom_fields
       };
 
