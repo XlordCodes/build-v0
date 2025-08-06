@@ -173,7 +173,7 @@ const ContactForm = ({ leadId, contactId = null, onClose, onSave }) => {
         phone: formData.phone.trim() || null,
         designation: formData.designation.trim() || null,
         notes: formData.notes.trim() || null,
-        createdBy: currentUser?.id || 'user-1'
+        createdBy: currentUser?.id || '8f2a1b3c-4d5e-6f7a-8b9c-0d1e2f3a4b5c'
       };
 
       let result;
